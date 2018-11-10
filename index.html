@@ -13,7 +13,137 @@
     </head>
   <body>
 
-    
+
+    <!--
+        NAVIGATION
+    -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center">
+        <a href="#" class="navbar-brand">
+            <img src="img/bootstrap-logo.svg" alt="logo" width="30" height="30" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Domov</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Služby</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Cenník</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Kariéra <span class="badge badge-info">3</span></a>
+                </li>
+            </ul>
+            <div class="mt-4 mt-md-0 mb-3 mb-md-0 ml-auto">
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#register">Registrácia</button>
+                <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#login">Prihlásenie</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--
+        MODAL REGISTER
+    -->
+
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Zadajte registračné údaje</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Použivateľské meno</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Zadajte použivateľské meno">
+                        </div>
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Zadajte email">
+                        <small id="emailHelp" class="form-text text-muted">Nikdy nebudeme Váš email zdielať s treťou stranou.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Heslo</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Zadajte heslo">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Potvrdenie hesla</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Zadajte heslo znova">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Zaregistrovaním sa súhlasíte s našimi <a href="#">Podmienky používania</a> a <a href="#">Ochrana osobných údajov.</a></label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Zatvoriť</button>
+                <button type="button" class="btn btn-success">Registrovať sa</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+        MODAL LOGIN
+    -->
+
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Zadajte prihlasovacie údaje</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Zadajte email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Heslo</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Zadajte heslo">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                        <label class="form-check-label" for="exampleCheck2">Zapamätať prihlásenie</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Zatvoriť</button>
+                <button type="button" class="btn btn-success">Prihlásiť sa</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
