@@ -1,3 +1,7 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 header {
     background-image: url('../img/header-bg.jpg');
     background-position: center;
@@ -28,4 +32,15 @@ header {
 #prices .card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, .5);
+}
+
+#references .carousel {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);;
+}
+
+#references p::before,
+#references p::after {
+    content: ' “ ';
+    color: #f8f9fa;
+    
 }
