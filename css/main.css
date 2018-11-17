@@ -41,6 +41,12 @@ header {
 #references p::before,
 #references p::after {
     content: ' “ ';
-    color: #f8f9fa;
-    
+    color: #f8f9fa;   
+}
+
+#faq .contact-form {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(#edebfc), color-stop(#dad9f9), color-stop(#c5c6f6), to(#adb5f4));
+    background-image: -webkit-linear-gradient(bottom, #ffffff, #edebfc, #dad9f9, #c5c6f6, #adb5f4);
+    background-image: -o-linear-gradient(bottom, #ffffff, #edebfc, #dad9f9, #c5c6f6, #adb5f4);
+    background-image: linear-gradient(to top, #ffffff, #edebfc, #dad9f9, #c5c6f6, #adb5f4);
 }
