@@ -50,3 +50,25 @@ header {
     background-image: -o-linear-gradient(bottom, #ffffff, #edebfc, #dad9f9, #c5c6f6, #adb5f4);
     background-image: linear-gradient(to top, #ffffff, #edebfc, #dad9f9, #c5c6f6, #adb5f4);
 }
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .icons i {
+    transition: .2s;
+}
+
+footer .icons i:hover {
+    transform: scale(1.5);
+}
+
+@media (max-width: 767px) {
+    footer {
+        text-align: center;
+    }
+}
