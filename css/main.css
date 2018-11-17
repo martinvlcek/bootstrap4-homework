@@ -26,16 +26,22 @@ header {
 }
 
 #prices .card {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
 #prices .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px 10px rgba(0, 0, 0, .5);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 0 30px 10px rgba(0, 0, 0, .5);
+            box-shadow: 0 0 30px 10px rgba(0, 0, 0, .5);
 }
 
 #references .carousel {
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);;
+    -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);
+            box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);;
 }
 
 #references p::before,
@@ -60,15 +66,33 @@ footer a:hover {
 }
 
 footer .icons i {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
 footer .icons i:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
 }
 
 @media (max-width: 767px) {
     footer {
         text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    #prices h1,
+    #references h1,
+    #faq h1 {
+        font-size: 2.5rem;
+    }
+    #references h4 {
+        font-size: 1.3rem;
+    }
+    #references p {
+        font-size: 1rem;
     }
 }
