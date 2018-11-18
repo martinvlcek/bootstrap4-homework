@@ -1,0 +1,98 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-image: url('../img/header-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.header__content {
+    opacity: .8;
+}
+
+.header__content ul li::before {
+    content: ' - ';
+    margin-right: 2px;
+}
+
+.header__content ul li {
+    font-size: 1.25rem;
+}
+
+#prices .card {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+#prices .card:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 0 30px 10px rgba(0, 0, 0, .5);
+            box-shadow: 0 0 30px 10px rgba(0, 0, 0, .5);
+}
+
+#references .carousel {
+    -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);
+            box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);;
+}
+
+#references p::before,
+#references p::after {
+    content: ' “ ';
+    color: #f8f9fa;   
+}
+
+#faq .contact-form {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(#edebfc), color-stop(#dad9f9), color-stop(#c5c6f6), to(#adb5f4));
+    background-image: -webkit-linear-gradient(bottom, #ffffff, #edebfc, #dad9f9, #c5c6f6, #adb5f4);
+    background-image: -o-linear-gradient(bottom, #ffffff, #edebfc, #dad9f9, #c5c6f6, #adb5f4);
+    background-image: linear-gradient(to top, #ffffff, #edebfc, #dad9f9, #c5c6f6, #adb5f4);
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .icons i {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+footer .icons i:hover {
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+}
+
+@media (max-width: 767px) {
+    footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    #prices h1,
+    #references h1,
+    #faq h1 {
+        font-size: 2.5rem;
+    }
+    #references h4 {
+        font-size: 1.3rem;
+    }
+    #references p {
+        font-size: 1rem;
+    }
+}
